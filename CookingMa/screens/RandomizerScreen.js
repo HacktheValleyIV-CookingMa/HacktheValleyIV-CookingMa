@@ -29,13 +29,24 @@ class RandomizerScreen extends React.Component {
                 
 
                 <Text style={styles.paragraphText}>{food[this.state.count % 2]}</Text>
+<View style={{flex:1, display:"flex",flexDirection:"row"}}>
+        <Image
+          style={styles.image}
+          source={'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528'}
+        />
+        
 
         <Image
-          style={{flex:1}}
+          style={styles.image}
           source={'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528'}
         />
 
-              
+        <Image
+          style={styles.image}
+          source={'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528'}
+        />
+
+</View>
 
             </View>
         );
@@ -48,17 +59,25 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#333333',
+    paddingHorizontal: "8vw"
   },
   paragraphText: {
     color: 'white',
-    padding: 20,
+    paddingVertical: "0.75em",
     fontSize: 24,
+  },
+  image:{
+    flex:1,
+    margin:"1em",
+
+
   },
   button: {
     borderColor: 'white',
     borderWidth: 0.5,
     backgroundColor: '#0047AB',
-    margin: 10,
+    margin: 0,
+    paddingHorizontal:"1em"
     
   },
 });
