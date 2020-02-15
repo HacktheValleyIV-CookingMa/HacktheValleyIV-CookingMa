@@ -29,21 +29,21 @@ class RandomizerScreen extends React.Component {
                 
 
                 <Text style={styles.paragraphText}>{food[this.state.count % 2]}</Text>
-<View style={{flex:1, display:"flex",flexDirection:"row"}}>
+<View style={{flex:1,flexWrap:"wrap", display:"flex",flexDirection:"row"}}>
         <Image
           style={styles.image}
-          source={'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528'}
+          source={require("../assets/images/robot-dev.png")}
         />
         
 
         <Image
           style={styles.image}
-          source={'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528'}
+          source={require("../assets/images/robot-dev.png")}
         />
 
         <Image
           style={styles.image}
-          source={'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528'}
+          source={require("../assets/images/robot-dev.png")}
         />
 
 </View>
@@ -59,16 +59,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#333333',
-    paddingHorizontal: "8vw"
+    paddingHorizontal: 40
   },
   paragraphText: {
     color: 'white',
-    paddingVertical: "0.75em",
+    paddingVertical: 8,
     fontSize: 24,
   },
   image:{
     flex:1,
-    margin:"1em",
+    margin:8,
+    minWidth:200
 
 
   },
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     backgroundColor: '#0047AB',
     margin: 0,
-    paddingHorizontal:"1em"
+    paddingHorizontal:8
     
   },
 });
