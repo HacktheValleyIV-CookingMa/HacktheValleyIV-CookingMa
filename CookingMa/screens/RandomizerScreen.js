@@ -31,26 +31,14 @@ class RandomizerScreen extends React.Component {
 
                 <Text style={styles.paragraphText}>{food[this.state.count % 2]}</Text>
                 <ScrollView>
-                        <Image
-                          style={styles.image}
-                          source={require("../assets/images/robot-dev.png")}
-                        />
-                        
 
-                        <Image
-                          style={styles.image}
-                          source={require("../assets/images/robot-dev.png")}
-                        />
-
-                        <Image
-                          style={styles.image}
-                          source={require("../assets/images/robot-dev.png")}
-                        />
-
-                        <Card text = 'This is a card.' url = "../assets/images/robot-dev.png"/>
-                        <Card text = 'This is a card 1.' url = "../assets/images/robot-dev.png"/>
-                        <Card text = 'This is a card 2.' url = "../assets/images/robot-dev.png"/>
-                        <Card text = 'This is a card 3.' url = "../assets/images/robot-dev.png"/>
+                        <Card text = 'This is a card.'/>
+                        <Card text = 'This is a card 1.'/>
+                        <Card text = 'This is a card 2.'/>
+                        <Card text = 'This is a card 3.'/>
+                        <Card text = 'This is a card 4.'/>
+                        <Card text = 'This is a card 5.'/>
+                        <Card text = 'This is a card 6.'/>
 
                 </ScrollView>
 
