@@ -1,14 +1,15 @@
 import React from 'react'
 import { StyleSheet, View, Text, Image } from 'react-native';
+import bob from '../assets/images/robot-dev.png' ;
 
 
 export default function Card(props) {
     return (
 
         <View style={styles.container}>
-            <Image
+            <Image style= {{flex:1, maxWidth:500}}
             
-                source = {require('../assets/images/robot-dev.png')}
+                source = {bob}
             
             /> 
             <Text style={styles.descriptionText}>{props.text}</Text>
