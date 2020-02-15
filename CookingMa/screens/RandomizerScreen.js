@@ -15,7 +15,7 @@ class RandomizerScreen extends React.Component {
 
     onPress = () => {
         this.setState({
-          count: this.state.count+1
+          count: this.state.count + 1
         })
       }
 
@@ -26,6 +26,7 @@ class RandomizerScreen extends React.Component {
                 <TouchableOpacity style={styles.button} onPress={this.onPress}>
                     <Text style={styles.paragraphText}>What should I eat? </Text>
                 </TouchableOpacity>
+                
 
                 <Text style={styles.paragraphText}>{food[this.state.count % 2]}</Text>
 
