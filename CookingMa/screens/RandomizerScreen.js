@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
 import { RectButton, ScrollView } from 'react-native-gesture-handler';
+import Card from '../components/Card';
 
 const food = ['apple', 'banana']
 
@@ -29,24 +30,29 @@ class RandomizerScreen extends React.Component {
                 
 
                 <Text style={styles.paragraphText}>{food[this.state.count % 2]}</Text>
-<View style={{flex:1,flexWrap:"wrap", display:"flex",flexDirection:"row"}}>
-        <Image
-          style={styles.image}
-          source={require("../assets/images/robot-dev.png")}
-        />
-        
+                <ScrollView>
+                        <Image
+                          style={styles.image}
+                          source={require("../assets/images/robot-dev.png")}
+                        />
+                        
 
-        <Image
-          style={styles.image}
-          source={require("../assets/images/robot-dev.png")}
-        />
+                        <Image
+                          style={styles.image}
+                          source={require("../assets/images/robot-dev.png")}
+                        />
 
-        <Image
-          style={styles.image}
-          source={require("../assets/images/robot-dev.png")}
-        />
+                        <Image
+                          style={styles.image}
+                          source={require("../assets/images/robot-dev.png")}
+                        />
 
-</View>
+                        <Card text = 'This is a card.' url = "../assets/images/robot-dev.png"/>
+                        <Card text = 'This is a card 1.' url = "../assets/images/robot-dev.png"/>
+                        <Card text = 'This is a card 2.' url = "../assets/images/robot-dev.png"/>
+                        <Card text = 'This is a card 3.' url = "../assets/images/robot-dev.png"/>
+
+                </ScrollView>
 
             </View>
         );
