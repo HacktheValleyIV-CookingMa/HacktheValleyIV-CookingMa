@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
 import { RectButton, ScrollView } from 'react-native-gesture-handler';
@@ -15,7 +15,7 @@ class RandomizerScreen extends React.Component {
 
     onPress = () => {
         this.setState({
-          count: this.state.count+1
+          count: this.state.count + 1
         })
       }
 
@@ -28,6 +28,13 @@ class RandomizerScreen extends React.Component {
                 </TouchableOpacity>
 
                 <Text style={styles.paragraphText}>{food[this.state.count % 2]}</Text>
+
+        <Image
+          style={{flex:1}}
+          source={'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg?w=1155&h=1528'}
+        />
+
+              
 
             </View>
         );
